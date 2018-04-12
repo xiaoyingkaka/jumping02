@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>578</width>
+    <height>351</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_whenMeet">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>160</y>
+     <width>191</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>when will they meet</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_whoDance">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>160</y>
+     <width>201</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>who will you dance</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="maxNumber">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>50</y>
+     <width>81</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>something</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>280</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_whenMeet</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>openNewWidget1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>240</x>
+     <y>175</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>164</x>
+     <y>210</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_whoDance</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>openNewWidget2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>465</x>
+     <y>170</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>back()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>471</x>
+     <y>293</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>424</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>back()</slot>
+ </slots>
+</ui>
